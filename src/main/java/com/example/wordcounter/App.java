@@ -9,9 +9,9 @@ public class App
     
     public static int wordcount(String s) {
        	int counter = 0;
-	int length = s.length();
-	for (int i = 0; i < length; i++) {
-		if (s.charAt(i) != ' ' && (i == length - 1 || s.charAt(i + 1) == ' '))
+	int len = s.length();
+	for (int i = 0; i < len; i++) {
+		if (s.charAt(i) != ' ' && (i == len - 1 || s.charAt(i + 1) == ' '))
 			counter++;
 	}
 	return counter;
